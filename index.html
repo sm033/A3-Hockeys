@@ -11,11 +11,115 @@
         <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.3/dist/full.min.css" rel="stylesheet" type="text/css" />
         <script src="https://cdn.tailwindcss.com"></script>
 
+        <!-- Manrope google font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+        <style>
+            .font-man-rope{
+                font-family: "Manrope", sans-serif;
+            }
+        </style>
+
     </head>
 
-    <body>
+    <body class="font-man-rope">
 
-        <header>
+        <header class="container mx-auto mt-8 lg:mt-14">
+
+            <!-- navbar section start -->
+
+            <nav class="" >
+                <div class="navbar bg-base-100">
+                    <div class="navbar-start">
+                      <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                          <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                        </div>
+                        <ul tabindex="0" class="menu text-lg font-semibold text-[#424247]  menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li class="text-[#FF4240]"><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Pages</a></li>
+                            <li><a>Blog</a></li>
+                            <li><a>Contact</a></li>
+                        </ul>
+                      </div>
+                      <a class="font-extrabold text-2xl lg:text-4xl">Hockey<span class="text-[#FF4240]">’</span>s</a>
+                    </div>
+                    <div class="navbar-center hidden lg:flex">
+                      <ul class="menu gap-5 text-lg font-semibold text-[#424247] menu-horizontal px-1">
+                        <li class="text-[#FF4240]"><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Pages</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact</a></li>
+                      </ul>
+                    </div>
+                    <div class="navbar-end lg:mr-0 mr-5">
+                        <img class="mr-5 hidden lg:block" src="Images/Frame.png" alt="">
+                       <button class=""><a class="btn bg-[#FF4240] normal-case text-white font-semibold text-xl rounded-lg">Get Ticket</a></button>
+                    </div>
+                  </div>
+            </nav>
+
+            <!-- navbar section end -->
+
+            <!-- banner section start -->
+            <div class=" relative lg:mx-0 mx-6 mt-8 lg:mt-14">
+
+                <!-- carousel start -->
+                <div class="carousel w-full">
+                    <!-- slide-1 -->
+                    <div id="slide1" class="carousel-item relative w-full">
+                      <img src="Images/1.png" class="w-full" />
+                      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide4" class="btn bg-black border-none  text-white btn-circle">❮</a> 
+                        <a href="#slide2" class="btn bg-black border-none text-white btn-circle">❯</a>
+                      </div>
+                    </div> 
+                    <!-- slide-2 -->
+                    <div id="slide2" class=" carousel-item relative w-full">
+                      <img src="Images/banner-2.png" class="w-full  rounded-2xl" />
+                      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn bg-black border-none text-white btn-circle">❮</a> 
+                        <a href="#slide3" class="btn bg-black border-none text-white btn-circle">❯</a>
+                      </div>
+                    </div> 
+                    <!-- slide-3 -->
+                    <div id="slide3" class="carousel-item relative w-full">
+                      <img src="Images/banner-3.png" class="w-full  rounded-2xl" />
+                      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn bg-black border-none text-white btn-circle">❮</a> 
+                        <a href="#slide4" class="btn bg-black border-none text-white btn-circle">❯</a>
+                      </div>
+                    </div> 
+                    <!-- slide-4 -->
+                    <div id="slide4" class="carousel-item relative w-full ">
+                      <img src="Images/banner-4.png" class="w-full  rounded-2xl" />
+                      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide3" class="btn bg-black border-none text-white btn-circle">❮</a> 
+                        <a href="#slide1" class="btn bg-black border-none text-2xl text-white btn-circle">❯</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- carousel end -->
+
+                  <!-- banner des -->
+
+               <div class="lg:absolute lg:right-12 lg:bottom-9 lg:mt-0 mt-4  ">
+                <div class=" bg-[#131318] rounded-2xl lg:p-10 p-6 lg:w-[650px] w-[377px] ">
+                    <h3 class="lg:text-2xl text-lg font-extrabold text-white">Meet all the heroes from the field</h3>
+                    <p class="lg:w-[500px] w-[350px]  mt-4 text-[#FFFFFF99] text-sm lg:text-[16px] font-medium">Stay updated with real-time match updates, player statistics, and team standings from your favorite leagues and tournaments.</p>
+                </div>
+
+               </div>
+                 
+
+            </div>
+            <!-- banner section end -->
+           
 
         </header>
 
